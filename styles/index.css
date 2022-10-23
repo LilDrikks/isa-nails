@@ -1,7 +1,14 @@
 @import 'style.css';
+@import 'header.css';
+@import 'introducao.css';
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: aliceblue;
 }
