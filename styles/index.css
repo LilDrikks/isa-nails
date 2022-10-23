@@ -1,4 +1,4 @@
-@import 'style.css';
+@import 'designs.css';
 @import 'header.css';
 @import 'introducao.css';
 
@@ -10,5 +10,6 @@
 
 body {
   overflow-x: hidden;
-  background-color: aliceblue;
+  background-color: rgb(231, 240, 248);
+  font-family: 'Montserrat', sans-serif;
 }

@@ -1,0 +1,39 @@
+.content {
+  max-width: 1040px;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: white;
+}
+.content h2 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.content h2:before{
+  content: "Raissa";
+  color: rgb(203, 108, 230);
+  align-self: center;
+  width: 40px;
+  height: 20px;
+  background-color: rgb(203, 108, 230);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  margin-right: 20px;
+}
+.content h2:after{
+  content: "Raissa";
+  color: rgb(203, 108, 230);
+  align-self: center;
+  width: 40px;
+  height: 20px;
+  background-color: rgb(203, 108, 230);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  margin-left: 20px;
+}
+.content div {
+  justify-content: space-between;
+  display: flex;
+}
+.content img {
+  border-radius: 8px;
+}
