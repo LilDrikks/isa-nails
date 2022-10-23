@@ -42,7 +42,7 @@
     margin: 20px 20px;
   }
 }
-@media (max-width: 800px){
+@media (max-width: 900px){
   .content h2::after, h2::before{
     display: none;
   }
