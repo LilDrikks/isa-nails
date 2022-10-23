@@ -9,7 +9,7 @@
   padding-bottom: 20px;
 }
 .content h2:before{
-  content: "Raissa";
+  content: "isa";
   color: rgb(203, 108, 230);
   align-self: center;
   width: 40px;
@@ -20,7 +20,7 @@
   margin-right: 20px;
 }
 .content h2:after{
-  content: "Raissa";
+  content: "isa";
   color: rgb(203, 108, 230);
   align-self: center;
   width: 40px;
