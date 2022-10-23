@@ -76,3 +76,16 @@ li a:hover::after {
   transform: translateY(0px);
   width: 100%;
 }
+
+@media (max-width: 1300px){
+  header {
+    padding: 16px;
+  }
+  .header{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .header span {
+    order: 3;
+  }
+}

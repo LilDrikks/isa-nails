@@ -34,3 +34,11 @@
     color: blueviolet;
     padding-top: 20px;
   }
+  @media (max-width: 1100px){
+    .descricao{
+      margin: 20px 20px;
+    }
+    .banner img{
+      max-width: 100%;
+    }
+  }
