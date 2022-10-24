@@ -31,12 +31,16 @@
     width: 100%;
     text-align: center;
     font-size: 32px;
-    color: blueviolet;
+    font-weight: 600;
+    color: rgb(203, 108, 230);
     padding-top: 20px;
   }
   @media (max-width: 1100px){
     .descricao{
       margin: 20px 20px;
+    }
+    .banner h1{
+      text-align: center;
     }
     .banner img{
       max-width: 100%;

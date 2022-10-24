@@ -43,7 +43,7 @@
   }
 }
 @media (max-width: 900px){
-  .content h2::after, h2::before{
+  .content h2::after, ::before{
     display: none;
   }
   .content div{
@@ -52,3 +52,9 @@
     gap: 20px;
   }
 }
+@media (max-width: 550px){
+  .content img {
+    width: 100%;
+  }
+}
+

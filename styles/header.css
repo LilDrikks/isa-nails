@@ -89,3 +89,8 @@ li a:hover::after {
     order: 3;
   }
 }
+@media (max-width: 550px){
+  ul::after, ::before{
+    display: none;
+  }
+}
