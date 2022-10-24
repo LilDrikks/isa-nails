@@ -43,7 +43,7 @@
   }
 }
 @media (max-width: 900px){
-  .content h2::after, ::before{
+  .content h2::after, h2::before{
     display: none;
   }
   .content div{
