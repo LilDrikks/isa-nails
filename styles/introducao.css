@@ -28,9 +28,10 @@
     font-size: 20px;
   }
   .banner span {
+    font-family: 'Dancing Script', cursive;
     width: 100%;
     text-align: center;
-    font-size: 32px;
+    font-size: 38px;
     font-weight: 600;
     color: rgb(203, 108, 230);
     padding-top: 20px;

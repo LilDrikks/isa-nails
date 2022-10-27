@@ -1,6 +1,8 @@
 @import 'designs.css';
 @import 'header.css';
 @import 'introducao.css';
+@import 'tabelas.css';
+@import 'contato.css';
 
 * {
   box-sizing: border-box;
