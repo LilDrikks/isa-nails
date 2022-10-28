@@ -110,3 +110,18 @@ function getScrollTop(element) {
     window.scroll(newX, newY);
   }, 1000 / 60); // 60 fps
 };
+
+const modal = document.querySelector('.divModal')
+const buttonCloseModal = document.querySelector('.closeModal')
+const buttonAgende = document.querySelector('.agende')
+console.log(buttonAgende);
+
+buttonCloseModal.addEventListener('click', closeModal)
+
+buttonAgende.addEventListener('click' , openModal)
+function openModal () {
+  modal.classList.toggle('modalAtivo')
+}
+function closeModal () {
+  modal.classList.toggle('modalAtivo')
+}

@@ -3,7 +3,7 @@
 @import 'introducao.css';
 @import 'tabelas.css';
 @import 'contato.css';
-
+@import 'modal.css';
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,6 +11,7 @@
 }
 
 body {
+  position: relative;
   overflow-x: hidden;
   background-color: rgb(231, 240, 248);
   font-family: 'Montserrat', sans-serif;
