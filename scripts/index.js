@@ -65,18 +65,18 @@ function scrollToIdOnClick(e) {
   scrolToPosition(to);
 }
 
+function getScrollTop(element) {
+  const id = element.getAttribute("href");
+  return document.querySelector(id).offsetTop;
+}
+
 function scrolToPosition(to) {
   // window.scroll({
   //   top: to,
   //   behavior: "smooth",
   // });
-  
-  smoothScrollTo(0, to, 1500)
-}
 
-function getScrollTop(element) {
-  const id = element.getAttribute("href");
-  return document.querySelector(id).offsetTop;
+  smoothScrollTo(0, to, 1500);
 }
 
 /**
@@ -85,19 +85,20 @@ function getScrollTop(element) {
  * @param {int} endY: destination y coordinate
  * @param {int} duration: animation duration in ms
  */
- function smoothScrollTo(endX, endY, duration) {
+function smoothScrollTo(endX, endY, duration) {
   const startX = window.scrollX || window.pageXOffset;
   const startY = window.scrollY || window.pageYOffset;
   const distanceX = endX - startX;
   const distanceY = endY - startY;
   const startTime = new Date().getTime();
 
-  duration = typeof duration !== 'undefined' ? duration : 400;
+  duration = typeof duration !== "undefined" ? duration : 400;
 
   // Easing function
   const easeInOutQuart = (time, from, distance, duration) => {
-    if ((time /= duration / 2) < 1) return distance / 2 * time * time * time * time + from;
-    return -distance / 2 * ((time -= 2) * time * time * time - 2) + from;
+    if ((time /= duration / 2) < 1)
+      return (distance / 2) * time * time * time * time + from;
+    return (-distance / 2) * ((time -= 2) * time * time * time - 2) + from;
   };
 
   const timer = setInterval(() => {
@@ -109,19 +110,34 @@ function getScrollTop(element) {
     }
     window.scroll(newX, newY);
   }, 1000 / 60); // 60 fps
-};
-
-const modal = document.querySelector('.divModal')
-const buttonCloseModal = document.querySelector('.closeModal')
-const buttonAgende = document.querySelector('.agende')
-console.log(buttonAgende);
-
-buttonCloseModal.addEventListener('click', closeModal)
-
-buttonAgende.addEventListener('click' , openModal)
-function openModal () {
-  modal.classList.toggle('modalAtivo')
 }
-function closeModal () {
-  modal.classList.toggle('modalAtivo')
+
+// Show e Close Modal
+{
+  const modal = document.querySelector(".divModal");
+  const buttonCloseModal = document.querySelector(".closeModal");
+  const buttonAgende = document.querySelector(".agende");
+
+  buttonCloseModal.addEventListener("click", closeModal);
+  buttonAgende.addEventListener("click", openModal);
+
+  window.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      modal.classList.add("modalInativo");
+    }
+  });
+
+  modal.addEventListener("click", (e) => {
+    if (e.target.accessKey == "1") {
+      closeModal();
+    }
+  });
+  function openModal() {
+    modal.classList.toggle("modalInativo");
+  }
+  function closeModal() {
+    modal.classList.toggle("modalInativo");
+  }
 }
+
+// Pegar dados dos inputs data e hora para agendar
