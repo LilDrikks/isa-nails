@@ -136,7 +136,7 @@ function smoothScrollTo(endX, endY, duration) {
     modal.classList.toggle("modalInativo");
   }
   function closeModal() {
-    modal.classList.toggle("modalInativo");
+    modal.classList.add("modalInativo");
   }
 }
 

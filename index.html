@@ -16,13 +16,15 @@
 </head>
 
 <body>
-  <div class="divModal" accessKey="1">
+  <div class="divModal modalInativo" accessKey="1">
     <form class="formModal">
       <div class="bodyModal">
         <h2>Escolha uma data e hora para fazer suas <span>Nails</span></h2>
-      <button class="closeModal">X</button>
+      <button type="button" class="closeModal">X</button>
       <div class="inputsDateTime">
-        <input type="date" name="agenda" id="agenda">
+        <label for="data"></label>
+        <input type="date" name="data" id="data">
+        <label for="hora"></label>
         <input type="time" name="hora" id="hora">
       </div>
       <button type="submit">Enviar</button>
