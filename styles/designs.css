@@ -54,7 +54,6 @@
 .slide-items img {
   border-radius: 8px;
   width: 100%;
-  height: 400px;
   display: block;
 }
 .slide-items > * {
