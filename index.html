@@ -6,6 +6,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@300&display=swap"
     rel="stylesheet" />
+  <meta name="description" content="Raissa Nail Design em São Paulo capital, com atendimento a domicilio">
 
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,21 +17,6 @@
 </head>
 
 <body>
-  <div class="divModal modalInativo" accessKey="1">
-    <form class="formModal">
-      <div class="bodyModal">
-        <h2>Escolha uma data e hora para fazer suas <span>Nails</span></h2>
-      <button type="button" class="closeModal">X</button>
-      <div class="inputsDateTime">
-        <label for="data">Escolha o dia</label>
-        <input type="date" name="data" id="data">
-        <label for="hora">Escolha o horário</label>
-        <input type="time" name="hora" id="hora">
-      </div>
-      <button type="submit">Enviar</button>
-      </div>
-    </form>
-  </div>
   <header>
     <div class="header">
       <span>
@@ -110,7 +96,21 @@
 
     </div>
   </footer>
-  
+  <div class="divModal modalInativo" accessKey="1">
+    <form class="formModal">
+      <div class="bodyModal">
+        <h2>Escolha sua melhor data e hora para fazer suas <span>Nails</span> avisarei sobre disponibilidade</h2>
+      <button type="button" class="closeModal">X</button>
+      <div class="inputsDateTime">
+        <label for="data">Escolha o dia</label>
+        <input type="date" name="data" id="data">
+        <label for="hora">Escolha o horário</label>
+        <input type="time" name="hora" id="hora">
+      </div>
+      <button type="submit"><a href="" class="agendaZap">Enviar</a></button>
+      </div>
+    </form>
+  </div>
   <script src="./scripts/index.js"></script>
 </body>
 
